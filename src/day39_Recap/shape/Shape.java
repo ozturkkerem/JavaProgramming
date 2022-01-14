@@ -1,4 +1,4 @@
-package day39_Recap.Shape;
+package day39_Recap.shape;
 
 public class Shape {
 

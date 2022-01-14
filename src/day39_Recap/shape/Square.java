@@ -1,4 +1,4 @@
-package day39_Recap.Shape;
+package day39_Recap.shape;
 
 public class Square extends Shape {
 
@@ -9,10 +9,10 @@ public class Square extends Shape {
     }
 
     public void setSide(double side) {
-        if (side <= 0)
+        if (side <= 0) {
             System.out.println("Invalid Side: " + side);
             System.exit(1);
-
+        }
         this.side = side;
     }
 
@@ -34,7 +34,9 @@ public class Square extends Shape {
     @Override
     public String toString() {
         return "Square{" +
-                "side=" + side +
+                " side=" + side +
+                " area=" + area() +
+                " perimeter= " + perimeter() +
                 '}';
     }
 }

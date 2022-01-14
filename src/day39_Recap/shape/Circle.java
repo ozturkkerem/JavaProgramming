@@ -1,4 +1,4 @@
-package day39_Recap.Shape;
+package day39_Recap.shape;
 
 public class Circle extends Shape {
 
@@ -31,5 +31,17 @@ public class Circle extends Shape {
     @Override
     public double perimeter() {
         return 2*radius*pi;
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", pi='" + pi + '\'' +
+                ", area='" + area() + '\'' +
+                ",perimeter='" + perimeter() + '\'' +
+
+
+                '}';
     }
 }

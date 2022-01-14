@@ -1,4 +1,4 @@
-package day39_Recap.Shape;
+package day39_Recap.shape;
 
 public class Rectangle extends Shape {
 
@@ -24,10 +24,10 @@ public class Rectangle extends Shape {
     }
 
     public void setWidth(double width) {
-        if (width <= 0)
+        if (width <= 0) {
             System.out.println("Invalid width: " + width);
             System.exit(1);
-
+        }
         this.width = width;
     }
 
@@ -47,5 +47,15 @@ public class Rectangle extends Shape {
     @Override
     public double perimeter() {
         return 2 * (length + width);
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                " area=" + area() +
+                " perimeter= " + perimeter() +
+                '}';
     }
 }
